@@ -38,7 +38,7 @@ bot.onText(/^\/Jamie/, function(msg){
     console.log(msg);
     var chatId = msg.chat.id;
     var username = msg.from.first_name;
-    var img = 'imgExample.jpg';
+    var img = 'media/imgExample.jpg';
     bot.sendPhoto(chatId, img);
     bot.sendMessage(chatId, "Hola miamor me presento de nuevo " + username + "YA QUE ALGUIEN LO QUERIA CON MAYUSCULAS");
 })
@@ -47,7 +47,7 @@ bot.onText(/^\/textraño/, function(msg){
     console.log(msg);
     var chatId = msg.chat.id;
     var username = msg.from.first_name;
-    var video = 'beimax.mp4';
+    var video = 'media/beimax.mp4';
     bot.sendVideo(chatId, video);
     bot.sendMessage(chatId, "Hola miamor me presento de nuevo " + username + "Este lo deje programado, mas bien es una prueba");
 })
