@@ -1,0 +1,14 @@
+{
+  "name": "ewrcbot",
+  "version": "1.0.0",
+  "description": "Bot de telegram en node js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "EWRC01",
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.52.0"
+  }
+}
