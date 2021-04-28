@@ -52,6 +52,21 @@ bot.onText(/^\/textraño/, function(msg){
     bot.sendMessage(chatId, "Hola miamor me presento de nuevo " + username + "Este lo deje programado, mas bien es una prueba");
 })
 
+bot.onText(/^\/aniversario/ , function(msg){
+    console.log(msg);
+    var chatId = msg.chat.id;
+    var videoAni = 'media/videoAnitest.mp4';
+    var audioAni = 'media/audioAni.ogg';
+    var stickerAni = 'media/peppoLove.jpg';
+    var textMessage = " Mentiras bebe, Hola mi amor feliz 28 espero podamos seguir cumpliendo muchos maaas";
+    bot.sendVideo(chatId, videoAni);
+    bot.sendAudio(chatId, audioAni);
+    bot.sendSticker(chatId, stickerAni);
+    bot.sendMessage(chatId, "Hola yo soy Beimax, tu asistente medico personal" + textMessage);
+    bot.on("polling_error", (err) => console.log(err));
+
+})
+
 
 
 
